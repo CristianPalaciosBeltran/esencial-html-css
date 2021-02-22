@@ -1,26 +1,26 @@
 @font-face {
-    font-family: charter;
-    src: url("../fonts/charter-regular.otf");
-    font-style: normal;
-    font-weight: 400;
+  font-family: charter;
+  src: url("../fonts/charter-regular.otf");
+  font-style: normal;
+  font-weight: 400;
 }
 @font-face {
-    font-family: charter;
-    src: url("../fonts/charter-italic.otf");
-    font-style: italic;
-    font-weight: 400;
+  font-family: charter;
+  src: url("../fonts/charter-italic.otf");
+  font-style: italic;
+  font-weight: 400;
 }
 @font-face {
-    font-family: charter;
-    src: url("../fonts/charter-bold.otf");
-    font-style: normal;
-    font-weight: bold;
+  font-family: charter;
+  src: url("../fonts/charter-bold.otf");
+  font-style: normal;
+  font-weight: bold;
 }
 @font-face {
-    font-family: charter;
-    src: url("../fonts/charter-bold-italic.otf");
-    font-style: italic;
-    font-weight: bold;
+  font-family: charter;
+  src: url("../fonts/charter-bold-italic.otf");
+  font-style: italic;
+  font-weight: bold;
 }
 
 :root {
@@ -32,7 +32,7 @@
 
 body {
   color: var(--gray30);
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
   /* font-family: charter; */
   /* font-size: 10px; */
 }
@@ -70,3 +70,27 @@ h2 {
 h3 {
   font-size: 1.5;
 }
+
+pre {
+  background: #fec62e;
+}
+
+.hero{
+  background-image: linear-gradient(to top, rgba(255,255,255, .3), transparent), url("../images/patron-1.png");
+  /* background-repeat: no-repeat; */
+  /* background-position: right 100px top; */
+  /* background-size: cover; */
+  height: 350px;
+}
+
+/* h1::after {
+  content: "-";
+}
+
+h1::before {
+  content: "-";
+} */
+
+/* ::selection {
+  background-color: red;
+} */
