@@ -30,6 +30,10 @@
   --gray10: #616161;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 .debug {
   /* box-shadow: 0 0 0 10px red; */
   outline: 1px solid red;
@@ -39,9 +43,17 @@
   
 }
 
-main{
-  
+.header-content {
+  position: relative;
+}
 
+main{
+
+}
+
+.header {
+  position: sticky;
+  top:0
 }
 
 .wrapper {
@@ -51,7 +63,6 @@ main{
 
 .main-content {
   background: white;
-  padding: 20px;
 }
 
 .title{
@@ -72,7 +83,12 @@ a {
 
 header {
   font-size: 14px;
+  width: 188px;
   color: var(--gray10);
+  position: absolute;
+  z-index: 1;
+  top: 64px;
+  left: -232px;
 }
 
 header a {
@@ -84,13 +100,19 @@ header a:hover {
   color: var(--gray30);
 }
 
+header li {
+  margin-bottom: 16px;
+}
+
 nav details summary {
   font-weight: bold;
+  line-height: 24px;
 }
 
 h1 {
   font-size: 3.4em;
   margin: 64px 0 16px 0;
+  font-weight: normal;
   
 }
 /* 
@@ -105,6 +127,10 @@ h2 {
   font-size: 2em;
   margin:64px 0 40px 0;
   font-weight: normal;
+  position: sticky;
+  top: 0;
+  background-color: white;
+  z-index: 1;
 }
 
 h3 {
@@ -113,6 +139,8 @@ h3 {
   font-size: 1.5;
   font-weight: normal;
   padding: 20px;
+  position: relative;
+  padding-left: 0;
   
 }
 
@@ -173,7 +201,8 @@ blockquote span::before {
 .section-content h3 {
   counter-increment: titleList;
   /* background: red; */
-  padding-bottom: 4px;
+  padding-bottom: 8px;
+  
 }
 .section-content h3::before {
   content: counter(titleList, decimal) ". ";
@@ -181,10 +210,14 @@ blockquote span::before {
 
 .section-content h3::after {
   content: "";
-  width: 32px;
+  width: 80px;
   height: 4px;
   background-color: var(--gray30);
   display: inline-block;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+
 }
 /* ::selection {
   background-color: red;
