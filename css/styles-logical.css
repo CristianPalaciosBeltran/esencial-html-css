@@ -49,9 +49,8 @@ a {
   /* inset-block-start: -45px; */
   /* inset-inline: 50px; */
   /* block-size: 500px; */
-
 }
-.header-content{
+.header-content {
   position: relative;
   inset-block-start: 65px;
 }
@@ -64,11 +63,10 @@ header {
   /* bottom */
   /* inset-block-end: ; */
   /* left */
-  inset-inline-start: -208px ;
+  inset-inline-start: -208px;
   /* right */
   /* inset-inline-end: ; */
   inline-size: 188px;
-
 }
 
 header a {
@@ -202,4 +200,60 @@ blockquote p {
   padding-inline: 16px;
   /* padding: 10px; */
   /* border: 1px solid blue; */
+}
+
+.slider {
+}
+
+.slider-container {
+  display: block;
+  overflow: hidden;
+  scroll-behavior: smooth;
+  white-space: nowrap;
+  font-size: 0;
+
+}
+
+.video{
+  margin: 0;
+  display: inline-block;
+  width: 100%;
+  height: auto;
+  aspect-ratio: 16/9;
+}
+
+.slider-bullet-list {
+  text-align: center;
+  margin-block: 10px;
+}
+
+.slider-bullet{
+  display: inline-block;
+  inline-size: 15px;
+  block-size: 15px;
+  background: white;
+  border-radius: 50%;
+}
+
+.form input {
+  inline-size: 100%;
+  border: 1px solid var(--white30);
+  background: #251F24;
+  box-sizing: border-box;
+  border-radius: 8px;
+  padding-inline: 16px;
+  padding-block: 12px;
+  color: var(--white30);
+  font-size: 16px;
+  display: block;
+  margin-block-end: 24px;
+}
+
+.form input[type='submit']{
+  background: #157EFB;
+  border: none;
+}
+
+.form input::-webkit-input-placeholder {
+  color: var(--white20);
 }
